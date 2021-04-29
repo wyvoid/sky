@@ -20,7 +20,7 @@
     "checkInvalidKey": true,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
+    "compileHotReLoad": true,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
     "useApiHostProcess": false,
@@ -30,7 +30,7 @@
       "outputPath": ""
     },
     "enableEngineNative": false,
-    "useIsolateContext": false,
+    "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "userConfirmedBundleSwitch": false,
@@ -40,7 +40,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.16.1",
-  "appid": "wxaf5a010b9002f9ed",
+  "appid": "wxc686f12b00c74140",
   "projectname": "sky",
   "debugOptions": {
     "hidedInDevtools": []
