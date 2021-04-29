@@ -17,3 +17,11 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.user-color {
+  display: flex;
+  color: blue;
+  font-size: 20px;
+  background: #fcd;
+  width: 100%;
+}
