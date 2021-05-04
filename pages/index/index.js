@@ -5,6 +5,7 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    count: 0,
     userInfo: {
       age: 18,
       color: 'blue'
@@ -18,6 +19,12 @@ Page({
   bindViewTap() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  plusCount() {
+    console.log('count：：'+this.data.count)
+    this.setData({
+      count: this.data.count+1
     })
   },
   onLoad() {
@@ -47,5 +54,18 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  getGiftList() {
+
+  },
+  login() {
+    wx.redirectTo({
+      url: '../login/login',
+      success: (result)=>{
+        console.log('login success')
+      },
+      fail: ()=>{},
+      complete: ()=>{}
+    });    
   }
 })

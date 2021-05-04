@@ -1,7 +1,21 @@
+
+<wxs src="../../wxs/const.wxs" module="constant"></wxs>
 <!--index.wxml-->
 <view class="container">
+  <view style="margin: 0 0 50rpx 0;" wx:if="{{true}}" bindtap="plusCount">
+    {{constant.background}}| count:{{count}}
+  </view>
+  <button type="primary" size="default" bindtap="login">login</button>
+  <view>
+    canIUse: {{canIUse}};
+    canIUseOpenData: {{canIUseOpenData}};
+    hasUserInfo: {{hasUserInfo}};
+    userAvatarUrl: {{userAvatarUrl}};
+    userNickName: {{userNickName}};
+    canIUseGetUserProfile: {{canIUseGetUserProfile}};
+  </view>
   <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+    <block wx:if="{{!canIUseOpenData}}" calss="userinfo-opendata">
       <view class="userinfo-avatar" bindtap="bindViewTap">
         <open-data type="userAvatarUrl"></open-data>
       </view>
